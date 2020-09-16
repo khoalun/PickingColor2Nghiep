@@ -2,31 +2,19 @@ import React, { Component } from 'react';
 
 
 class Reset extends Component {
-
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            default : {
-                color : 'red',
-                size : 12 
-
-
-            }
-        };
-    }
-    onReset = ()  => {
-        this.props.onReset(this.state.default) ;
-    }
-    
-    render () {
+    render() {
         return (
-        <button type="button" className="btn btn-default" onClick= {this.onReset} >Reset Button</button>
+            <div>
+           <button type="button" className="btn btn-primary">reset</button>
+            </div>
+           );
 
-        );
+
+
     }
-
 }
 
-
 export default Reset;
+
+
+
